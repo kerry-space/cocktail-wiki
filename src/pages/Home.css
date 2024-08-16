@@ -1,0 +1,19 @@
+
+
+.home-wrapper{
+  
+    margin: 30px;
+}
+
+.home-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  
+}
+
+.cocktail-card{
+    background-color: #f9f9f9;
+}

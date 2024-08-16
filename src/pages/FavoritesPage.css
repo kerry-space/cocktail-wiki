@@ -1,0 +1,30 @@
+.favorites-wrapper{
+    margin:50px;
+    text-align: center;
+    
+}
+.favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-color: #f9f9f9;
+}
+
+.favorites-list .cocktail-card {
+    position: relative;
+    width: 200px;
+}
+
+.favorites-list button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.favorites-list button:hover {
+    background-color: #c9302c;
+}
