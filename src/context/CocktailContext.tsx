@@ -13,7 +13,7 @@ export function CocktailProvider({ children }: ICocktailProviderProps): ReactEle
     const [searchCache, setSearchCache] = useState<Map<string, ICocktail[]>>(new Map());
     const [favorites, setFavorites] = useState<ICocktail[]>(() => {
         const storedFavorites = localStorage.getItem('favorites');
-        return storedFavorites ? JSON.parse(storedFavorites) : [];
+        return storedFavorites ? JSON.parse(storedFavorites) as ICocktail[] : [];
     });
 
 
