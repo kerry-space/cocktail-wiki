@@ -21,8 +21,8 @@ export function Home() {
     <div className="home-wrapper">
      <div className="home-header">
      <h1>Welcome to Cocktail Wiki</h1>
+      
       <div className="home-actions">
-     
         <button
           className="cta-button"
           onClick={() => fetchRandomCocktail(getRandomLetter())}

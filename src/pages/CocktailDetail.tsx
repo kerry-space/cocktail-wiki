@@ -41,6 +41,7 @@ export function CocktailDetail(): ReactElement {
             <li key={index}>
               <span className="measure"><strong>Measure:</strong> {item.measure}</span>
               <span className="ingredient"><strong>Ingredient:</strong> {item.ingredient}</span>
+              
             </li>
           ))}
         </ul>

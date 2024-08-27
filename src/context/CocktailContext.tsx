@@ -56,7 +56,7 @@ export function CocktailProvider({ children }: ICocktailProviderProps): ReactEle
             }
 
             const data = await response.json();
-
+            console.log(data)
             const processedCocktails: ICocktail[] = data.drinks.map((drink: ICocktail) => processCocktail(drink));
 
             setCocktails(processedCocktails);

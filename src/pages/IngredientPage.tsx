@@ -1,7 +1,7 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useCocktailFunc } from "../hooks/useCocktalFunc";
-import { IIngredient } from "../interface";
+import { ICocktail, IIngredient } from "../interface";
 
 export function IngredientPage(): ReactElement {
   const { id } = useParams<{ id: string }>();
@@ -32,7 +32,7 @@ export function IngredientPage(): ReactElement {
       <h3>Related Cocktails</h3>
       <div className="related-cocktails">
         {ingredient.relatedCocktails.length > 0 ? (
-          ingredient.relatedCocktails.map((cocktail) => (
+          ingredient.relatedCocktails.map((cocktail: ICocktail) => (
             <div key={cocktail.idDrink}>
               <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
               <p>{cocktail.strDrink}</p>

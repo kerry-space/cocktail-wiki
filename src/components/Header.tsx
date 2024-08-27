@@ -18,6 +18,7 @@ export function Header(): ReactElement {
       <nav className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/favorites">Favorites</Link>
+        <Link to="/ingredient">Ingredient</Link>
         <Link to="/about">About</Link>
       </nav>
       <div className="nav-links">
